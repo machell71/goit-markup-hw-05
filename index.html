@@ -25,11 +25,12 @@
         <nav class="nav">
           <a href="/" class="logo">Web<span class="web">Studio</span></a>
           <ul class="nav-list list">
-            <li class="nav-item"><a href="" class="link current">Студия</a></li>
+            <li class="nav-item"><a href="" class="link 
+              studio current">Студия</a></li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+              <a href="./portfolio.html" class="link portfolio">Портфолио</a>
             </li>
-            <li class="nav-item"><a href="" class="link">Контакты</a></li>
+            <li class="nav-item"><a href="" class="link contacts">Контакты</a></li>
           </ul>
         </nav>
         <ul class="connection-list list">
@@ -52,7 +53,7 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="btn">Заказать услугу</button>
+          <button type="button" class="btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Benefits -->
@@ -127,6 +128,7 @@
                 width="370"
                 height="294"
               />
+              <p class="directions-text">Десктопные приложения</p>
             </li>
             <li>
               <img
@@ -135,6 +137,7 @@
                 width="370"
                 height="294"
               />
+              <p class="directions-text">Мобильные приложения</p>
             </li>
             <li>
               <img
@@ -143,6 +146,7 @@
                 width="370"
                 height="294"
               />
+              <p class="directions-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -281,5 +285,11 @@
       </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close><svg class="close-icon" width="18" height="18"><use href="./images/symbol-defss.svg#icon---18dp-2-1"></use></svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
