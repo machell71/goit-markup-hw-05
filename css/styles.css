@@ -565,9 +565,9 @@ body {
   width: calc((100% - 60px) / 3);
   cursor: pointer;
 
-  transition-property: box-shadow;
+  /* transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .filter-item:hover,
 .filter-item:focus {
@@ -604,10 +604,9 @@ img {
   top: 0;
   left: 0;
   width: 370px;
-  height: 294px;
+  height: 295px;
   padding: 63px 24px;
   transform: translateY(100%);
-  /* transition: transform 300ms linear; */
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
